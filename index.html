@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Online</title>
+    <link rel="stylesheet" href="css/oneui.min.css">
+</head>
+<body>
+    <div>
+        <div class="content">
+            <div class="block block-rounded">
+                <div class="block-header block-header-default">
+                  <h3 class="block-title">tools (MediaMaitre)</h3>
+                </div>
+                <div class="block-content block-content-full">
+                  <form action="" method="POST" onsubmit="return false;">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-4">
+                                <label class="form-label d-flex justify-content-between" for="title">
+                                    <span>
+                                        Title
+                                    </span>
+                                    <span class="cls-copy">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+                                            <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+                                         </svg>
+                                    </span>
+                                </label>
+                                <textarea class="js-maxlength form-control" id="title" name="title" rows="5" maxlength="30" placeholder="30 characters you can type ..."></textarea>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-4">
+                                <label class="form-label d-flex justify-content-between" for="short">
+                                    <span>
+                                        Short
+                                    </span>
+                                    <span class="cls-copy">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+                                            <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+                                         </svg>
+                                    </span>
+                                </label>
+                                <textarea class="js-maxlength form-control" id="short" name="short" rows="5" maxlength="80" placeholder="80 characters you can type ..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="content-heading border-bottom mb-4 pb-2">
+                        <label class="d-flex justify-content-between" for="description">
+                            <span>
+                                Description
+                            </span>
+                            <span class="cls-copy">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+                                    <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+                                 </svg>
+                            </span>
+                        </label>
+                    </h2>
+                    <div class="row">
+                      <div class="col-8 m-auto">
+                        <div class="mb-4">
+                          <textarea class="js-maxlength form-control" id="description" name="description" rows="20" maxlength="4000" placeholder="4000 characters you can type ..." ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-maxlength.min.js"></script>
+    <script src="js/main.script.js"></script>
+</body>
+</html>
