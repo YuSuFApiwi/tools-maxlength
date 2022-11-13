@@ -39,7 +39,7 @@ jQuery(function() {
         var today = new Date();
         var date = today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
         var a = document.createElement("a");
-        var data = `${$(title).val()}\n${$(short).val()}\n${$(description).val()}`;
+        var data = `##Title##\n${$(title).val()}\n\n##Short##\n${$(short).val()}\n\n##Description##\n${$(description).val()}`;
         var fileName = `my-file-${date}`;
         var json = JSON.stringify(data),
             blob = new Blob([data], {type: "text/plain;charset=utf-8"}),
