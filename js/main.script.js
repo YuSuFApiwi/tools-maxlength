@@ -34,6 +34,21 @@ jQuery(function() {
         placement: 'bottom',
         message: 'Used %charsTyped% of %charsTotal% Chars.'
     });
+
+    $(".download").on("click", function(){
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
+        var a = document.createElement("a");
+        var data = `${$(title).val()}\n${$(short).val()}\n${$(description).val()}`;
+        var fileName = `my-file-${date}`;
+        var json = JSON.stringify(data),
+            blob = new Blob([data], {type: "text/plain;charset=utf-8"}),
+            url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = fileName;
+        a.click();
+        window.URL.revokeObjectURL(url);
+    });
     
     $(".cls-copy").on("click", function(){
         var copy = $(this).parent("label").attr("for");
