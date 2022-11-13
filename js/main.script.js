@@ -20,6 +20,12 @@ jQuery(function() {
     $(description).on("keyup", function(){
         window.localStorage.setItem("description", $(this).val());
     });
+    $(".cls-clear").on("click", function(){
+        window.localStorage.clear();
+        $(title).val("");
+        $(short).val("");
+        $(description).val("");
+    });
     $('[maxlength]').maxlength({
         alwaysShow: true,
         threshold: 10,
